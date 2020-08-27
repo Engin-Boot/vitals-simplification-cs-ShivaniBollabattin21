@@ -11,3 +11,36 @@ class Checker
             return 0;
         }
 }
+
+class VitalsChecker
+    {
+        public static bool vitalsAreOk(float bpm, float spo2, float respRate)
+        {
+            if ((bpm < 70 || bpm > 150) && spo2 <= 95 && (respRate < 30 || respRate > 95))
+            {
+                return false;
+            }
+            return true;
+
+        }
+    }
+
+ class VitalsReport
+    {
+        public static void ExpectTrue(bool expression)
+        {
+            if (!expression)
+            {
+                Console.WriteLine("Expected true, but got false");
+                Environment.Exit(1);
+            }
+        }
+        public static void ExpectFalse(bool expression)
+        {
+            if (expression)
+            {
+                Console.WriteLine("Expected false, but got true");
+                Environment.Exit(1);
+            }
+        }
+    }
