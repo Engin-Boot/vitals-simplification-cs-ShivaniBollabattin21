@@ -16,11 +16,11 @@ class VitalsChecker
     {
         public static bool vitalsAreOk(float bpm, float spo2, float respRate)
         {
-            if ((bpm < 70 || bpm > 150) && spo2 <= 95 && (respRate < 30 || respRate > 95))
+           if ((bpm >= 60 && bpm <= 100) && (spo2 >= 95 && spo2<=100  ) && (respRate >=30 || respRate <= 95))
             {
-                return false;
+                return true;
             }
-            return true;
+            return false;
 
         }
     }
