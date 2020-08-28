@@ -4,6 +4,8 @@ using System.Diagnostics;
 
 namespace VitalsSimplification
 {
+     class Test
+    {
         static int Main()
         {
             VitalsReport.ExpectTrue(VitalsChecker.vitalsAreOk(100, 95, 60));
