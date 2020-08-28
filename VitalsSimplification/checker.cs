@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
-using static VitalsSimplification.VitalsChecker
-using static VitalsSimplification.VitalsReport
+using static VitalsSimplification.VitalsChecker;
+using static VitalsSimplification.VitalsReport;
 
 namespace VitalsSimplification
 {
