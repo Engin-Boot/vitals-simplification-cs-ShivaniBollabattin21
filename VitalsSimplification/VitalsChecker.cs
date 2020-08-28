@@ -12,7 +12,8 @@ namespace VitalsSimplification
     {
         public static bool vitalsAreOk(float bpm, float spo2, float respRate)
         {
-            if(BPMCheker.checkBpm(bpm) && SPO2Checker.checkSpo2(spo2) && RespRateChecker.checkRespRate(respRate))
+            bool condition = BPMCheker.checkBpm(bpm) && SPO2Checker.checkSpo2(spo2) && RespRateChecker.checkRespRate(respRate);
+            if(condition)
             {
                 return true;
             }
