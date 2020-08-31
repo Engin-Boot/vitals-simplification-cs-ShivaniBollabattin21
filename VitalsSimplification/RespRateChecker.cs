@@ -9,7 +9,7 @@ namespace VitalsSimplification
     {
         public static bool checkRespRate(float respRate)
         {
-            if (respRate >= 30 && respRate <= 95)
+            if (VitalsRangeChecker.rangeCheck(95, 30, respRate))
             {
                 return true;
             }
