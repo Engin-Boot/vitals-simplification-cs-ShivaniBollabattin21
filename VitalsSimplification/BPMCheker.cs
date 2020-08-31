@@ -9,7 +9,7 @@ namespace VitalsSimplification
     {
         public static bool checkBpm(float bpm)
         {
-            if (bpm >= 70 && bpm <= 150)
+            if (VitalsRangeChecker.rangeCheck(150, 70, bpm))
             {
                 return true;
             }
