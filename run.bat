@@ -1,5 +1,5 @@
 pushd "%~dp0"
 
-BPMCheker.exe
+checker.exe
 
 popd
