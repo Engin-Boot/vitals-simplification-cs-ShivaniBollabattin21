@@ -23,8 +23,8 @@ namespace VitalsSimplification
 
         static bool checkVitals(float bpm, float spo2, float respRate)
         {
-            bool condition1 = BPMCheker.checkBpm(bpm) && SPO2Checker.checkSpo2(spo2);
-            bool condition2 = condition1 && RespRateChecker.checkRespRate(respRate);
+            bool condition1 = VitalsRangeChecker.rangeCheck(150, 70, bpm) && VitalsRangeChecker.rangeCheck(100, 95, spo2);
+            bool condition2 = condition1 && VitalsRangeChecker.rangeCheck(95, 30, respRate);
             return condition2;
         }
     }
