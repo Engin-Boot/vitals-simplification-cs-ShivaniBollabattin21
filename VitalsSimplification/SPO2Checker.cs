@@ -9,7 +9,7 @@ namespace VitalsSimplification
     {
         public static bool checkSpo2(float spo2)
         {
-            if (spo2 >= 95 && spo2 <= 100)
+            if (VitalsRangeChecker.rangeCheck(100, 95, spo2))
             {
                 return true;
             }
