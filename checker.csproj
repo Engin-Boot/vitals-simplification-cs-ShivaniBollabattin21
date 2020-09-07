@@ -1,6 +1,9 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Include="checker.cs"/>
+    <Compile Include="VitalsSimplification\checker.cs" />  
+    <Compile Include="VitalsSimplification\VitalsRangeChecker.cs" />
+    <Compile Include="VitalsSimplification\VitalsChecker.cs" />
+    <Compile Include="VitalsSimplification\VitalsReport.cs" />
   </ItemGroup>
   <Target Name="Build">
     <Csc Sources="@(Compile)"/>  
